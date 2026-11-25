@@ -1,18 +1,38 @@
 [
  {
-  "id": "rassadka",
-  "ver": "1.9"
+  "id": "kim-kimmen",
+  "built": "2026-11-25"
+ },
+ {
+  "id": "bauyrsaq",
+  "built": "2026-11-25"
  },
  {
   "id": "qaitala",
-  "ver": "7.2"
+  "built": "2026-11-25"
  },
  {
-  "id": "tynysh",
-  "ver": "2.5"
+  "id": "dongelek",
+  "built": "2026-11-25"
  },
  {
   "id": "selfie",
-  "ver": "1.9"
+  "built": "2026-11-25"
+ },
+ {
+  "id": "tynysh",
+  "built": "2026-11-25"
+ },
+ {
+  "id": "rassadka",
+  "built": "2026-11-25"
+ },
+ {
+  "id": "ekspedicia",
+  "built": "2026-11-25"
+ },
+ {
+  "id": "adal-azamat",
+  "built": "2026-11-25"
  }
 ]
