@@ -102,6 +102,12 @@ ul.pts li::before{content:"";position:absolute;left:0;top:.2em;width:20px;height
 .back{display:inline-block;margin-top:18px;font-weight:700;color:var(--soft)}
 @media (max-width:860px){.hero,.gp{grid-template-columns:1fr}.hero .pic img+img{display:none}.steps,.prices{grid-template-columns:1fr}nav .hm{display:none}.cta .row{margin-left:0}}
 </style>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-R2QV8DSRJN"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag('js',new Date());gtag('config','G-R2QV8DSRJN');
+document.addEventListener('click',function(e){var a=e.target.closest('a');if(!a)return;var h=a.getAttribute('href')||'',g=(a.closest('[data-g]')||document.body).getAttribute('data-g')||'';
+if(h.indexOf('wa.me')>=0)gtag('event','whatsapp_click',{game:g,place:a.className||'link',page:location.pathname});
+else{var m=h.match(/demo\/([^/]+)\//);if(m)gtag('event','demo_open',{game:m[1],page:location.pathname})}});</script>
+
 <script>
 (function(){var k='site-lang',l;try{l=localStorage.getItem(k)}catch(e){}
 if(l!=='kk'&&l!=='ru')l=(navigator.language||'').slice(0,2)==='ru'?'ru':'kk';document.documentElement.lang=l;
@@ -130,49 +136,49 @@ document.addEventListener('click',function(e){var b=e.target.closest('.lang butt
 <section id="games"><div class="wrap">
  <h2><span data-l="kk">Ойындар</span><span data-l="ru">Игры</span></h2>
  <p class="sub"><span data-l="kk">«Сынап көру» — ойын браузерде ашылады, демо нұсқа. Тізім сақталмайды, экранда «ДЕМО» жазуы тұрады.</span><span data-l="ru">«Попробовать» — игра откроется в браузере, демо-версия. Список не сохраняется, на экране надпись «ДЕМО».</span></p>
- <div class="grid"><article class="card">
+ <div class="grid"><article class="card" data-g="kim-kimmen">
  <a class="sh" href="games/kim-kimmen.html"><img src="img/kim-kimmen-2.webp" alt="" loading="lazy"><img class="ic" src="img/kim-kimmen-icon.webp" alt=""></a>
  <div class="bd"><h3><a href="games/kim-kimmen.html"><span data-l="kk">Кім кіммен?</span><span data-l="ru">Кто с кем?</span></a></h3><p><span data-l="kk">Сыныпты топтарға әділ бөлу: әр оқушы табличканы ашып, өз тобын табады</span><span data-l="ru">Честное деление класса на группы: каждый открывает табличку и находит свою группу</span></p><div class="tags"><span class="tag"><span data-l="kk">Топтық жұмыс</span><span data-l="ru">Групповая работа</span></span><span class="tag"><span data-l="kk">Кез келген пән</span><span data-l="ru">Любой предмет</span></span></div>
  <div class="ft"><span class="price">1 000 ₸</span>
   <a class="btn t sm" href="demo/kim-kimmen/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M8 5.5v13a1 1 0 0 0 1.5.9l10.4-6.5a1 1 0 0 0 0-1.8L9.5 4.6A1 1 0 0 0 8 5.5z"/></svg><span data-l="kk">Сынап көру</span><span data-l="ru">Попробовать</span></a>
   <a class="btn sm" href="games/kim-kimmen.html"><span data-l="kk">Толығырақ</span><span data-l="ru">Подробнее</span></a></div></div>
-</article><article class="card">
+</article><article class="card" data-g="bauyrsaq">
  <a class="sh" href="games/bauyrsaq.html"><img src="img/bauyrsaq-2.webp" alt="" loading="lazy"><img class="ic" src="img/bauyrsaq-icon.webp" alt=""></a>
  <div class="bd"><h3><a href="games/bauyrsaq.html"><span data-l="kk">Бауырсақ</span><span data-l="ru">Баурсак</span></a></h3><p><span data-l="kk">Тақтаға шақыру ертегімен: үш бауырсақ жарысады, түлкі жеңімпазды ұстап алады</span><span data-l="ru">Вызов к доске по сказке: три баурсака бегут наперегонки, лиса ловит победителя</span></p><div class="tags"><span class="tag"><span data-l="kk">Тақтаға шақыру</span><span data-l="ru">Вызов к доске</span></span><span class="tag"><span data-l="kk">1–6 сынып</span><span data-l="ru">1–6 классы</span></span></div>
  <div class="ft"><span class="price">1 000 ₸</span>
   <a class="btn t sm" href="demo/bauyrsaq/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M8 5.5v13a1 1 0 0 0 1.5.9l10.4-6.5a1 1 0 0 0 0-1.8L9.5 4.6A1 1 0 0 0 8 5.5z"/></svg><span data-l="kk">Сынап көру</span><span data-l="ru">Попробовать</span></a>
   <a class="btn sm" href="games/bauyrsaq.html"><span data-l="kk">Толығырақ</span><span data-l="ru">Подробнее</span></a></div></div>
-</article><article class="card">
+</article><article class="card" data-g="qaitala">
  <a class="sh" href="games/qaitala.html"><img src="img/qaitala-2.webp" alt="" loading="lazy"><img class="ic" src="img/qaitala-icon.webp" alt=""></a>
  <div class="bd"><h3><a href="games/qaitala.html"><span data-l="kk">Қайтала!</span><span data-l="ru">Повтори!</span></a></h3><p><span data-l="kk">Сергіту сәті: барабан оқушыны таңдайды, сынып қимылды қайталап, қатып қалады</span><span data-l="ru">Физминутка: барабан выбирает ученика, класс повторяет движение и замирает</span></p><div class="tags"><span class="tag"><span data-l="kk">Сергіту сәті</span><span data-l="ru">Физминутка</span></span><span class="tag"><span data-l="kk">1–6 сынып</span><span data-l="ru">1–6 классы</span></span></div>
  <div class="ft"><span class="price">1 000 ₸</span>
   <a class="btn t sm" href="demo/qaitala/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M8 5.5v13a1 1 0 0 0 1.5.9l10.4-6.5a1 1 0 0 0 0-1.8L9.5 4.6A1 1 0 0 0 8 5.5z"/></svg><span data-l="kk">Сынап көру</span><span data-l="ru">Попробовать</span></a>
   <a class="btn sm" href="games/qaitala.html"><span data-l="kk">Толығырақ</span><span data-l="ru">Подробнее</span></a></div></div>
-</article><article class="card">
+</article><article class="card" data-g="dongelek">
  <a class="sh" href="games/dongelek.html"><img src="img/dongelek-2.webp" alt="" loading="lazy"><img class="ic" src="img/dongelek-icon.webp" alt=""></a>
  <div class="bd"><h3><a href="games/dongelek.html"><span data-l="kk">Айналдыр!</span><span data-l="ru">Крути!</span></a></h3><p><span data-l="kk">Оқушы дөңгелекті айналдырады — тапсырма, тілек немесе рефлексия сұрағы шығады</span><span data-l="ru">Ученик крутит колесо — выпадает задание, пожелание или вопрос для рефлексии</span></p><div class="tags"><span class="tag"><span data-l="kk">Сергіту сәті</span><span data-l="ru">Физминутка</span></span><span class="tag"><span data-l="kk">Рефлексия</span><span data-l="ru">Рефлексия</span></span></div>
  <div class="ft"><span class="price">1 000 ₸</span>
   <a class="btn t sm" href="demo/dongelek/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M8 5.5v13a1 1 0 0 0 1.5.9l10.4-6.5a1 1 0 0 0 0-1.8L9.5 4.6A1 1 0 0 0 8 5.5z"/></svg><span data-l="kk">Сынап көру</span><span data-l="ru">Попробовать</span></a>
   <a class="btn sm" href="games/dongelek.html"><span data-l="kk">Толығырақ</span><span data-l="ru">Подробнее</span></a></div></div>
-</article><article class="card">
+</article><article class="card" data-g="selfie">
  <a class="sh" href="games/selfie.html"><img src="img/selfie-1.webp" alt="" loading="lazy"><img class="ic" src="img/selfie-icon.webp" alt=""></a>
  <div class="bd"><h3><a href="games/selfie.html"><span data-l="kk">Селфи!</span><span data-l="ru">Селфи!</span></a></h3><p><span data-l="kk">Көңілді суреттегі позаны камера алдында қайтала</span><span data-l="ru">Повтори позу с весёлой картинки перед камерой</span></p><div class="tags"><span class="tag"><span data-l="kk">Сергіту сәті</span><span data-l="ru">Физминутка</span></span><span class="tag"><span data-l="kk">Камера</span><span data-l="ru">Камера</span></span><span class="tag w"><span data-l="kk">Камера керек</span><span data-l="ru">Нужна камера</span></span></div>
  <div class="ft"><span class="price">1 000 ₸</span>
   <a class="btn t sm" href="demo/selfie/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M8 5.5v13a1 1 0 0 0 1.5.9l10.4-6.5a1 1 0 0 0 0-1.8L9.5 4.6A1 1 0 0 0 8 5.5z"/></svg><span data-l="kk">Сынап көру</span><span data-l="ru">Попробовать</span></a>
   <a class="btn sm" href="games/selfie.html"><span data-l="kk">Толығырақ</span><span data-l="ru">Подробнее</span></a></div></div>
-</article><article class="card">
+</article><article class="card" data-g="tynysh">
  <a class="sh" href="games/tynysh.html"><img src="img/tynysh-2.webp" alt="" loading="lazy"><img class="ic" src="img/tynysh-icon.webp" alt=""></a>
  <div class="bd"><h3><a href="games/tynysh.html"><span data-l="kk">Тыныш таймер</span><span data-l="ru">Тихий таймер</span></a></h3><p><span data-l="kk">Сыныптағы тыныштық таймері және шу өлшегіш</span><span data-l="ru">Таймер тишины и шумомер для класса</span></p><div class="tags"><span class="tag"><span data-l="kk">Тәртіп</span><span data-l="ru">Дисциплина</span></span><span class="tag"><span data-l="kk">Кез келген пән</span><span data-l="ru">Любой предмет</span></span><span class="tag w"><span data-l="kk">Микрофон керек</span><span data-l="ru">Нужен микрофон</span></span></div>
  <div class="ft"><span class="price">1 000 ₸</span>
   <a class="btn t sm" href="demo/tynysh/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M8 5.5v13a1 1 0 0 0 1.5.9l10.4-6.5a1 1 0 0 0 0-1.8L9.5 4.6A1 1 0 0 0 8 5.5z"/></svg><span data-l="kk">Сынап көру</span><span data-l="ru">Попробовать</span></a>
   <a class="btn sm" href="games/tynysh.html"><span data-l="kk">Толығырақ</span><span data-l="ru">Подробнее</span></a></div></div>
-</article><article class="card">
+</article><article class="card" data-g="rassadka">
  <a class="sh" href="games/rassadka.html"><img src="img/rassadka-2.webp" alt="" loading="lazy"><img class="ic" src="img/rassadka-icon.webp" alt=""></a>
  <div class="bd"><h3><a href="games/rassadka.html"><span data-l="kk">Қайда отырам?</span><span data-l="ru">Где я сижу?</span></a></h3><p><span data-l="kk">Оқушыларды парталарға жеребемен отырғызу</span><span data-l="ru">Рассадка учеников по партам жребием</span></p><div class="tags"><span class="tag"><span data-l="kk">Сынып жетекшіге</span><span data-l="ru">Классному руководителю</span></span><span class="tag"><span data-l="kk">Кез келген пән</span><span data-l="ru">Любой предмет</span></span></div>
  <div class="ft"><span class="price">1 000 ₸</span>
   <a class="btn t sm" href="demo/rassadka/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M8 5.5v13a1 1 0 0 0 1.5.9l10.4-6.5a1 1 0 0 0 0-1.8L9.5 4.6A1 1 0 0 0 8 5.5z"/></svg><span data-l="kk">Сынап көру</span><span data-l="ru">Попробовать</span></a>
   <a class="btn sm" href="games/rassadka.html"><span data-l="kk">Толығырақ</span><span data-l="ru">Подробнее</span></a></div></div>
-</article><article class="card">
+</article><article class="card" data-g="ekspedicia">
  <a class="sh" href="games/ekspedicia.html"><img src="img/ekspedicia-2.webp" alt="" loading="lazy"><img class="ic" src="img/ekspedicia-icon.webp" alt=""></a>
  <div class="bd"><h3><a href="games/ekspedicia.html"><span data-l="kk">Кім кіммен? Экспедиция</span><span data-l="ru">Кто с кем? Экспедиция</span></a></h3><p><span data-l="kk">Үлкен сыныптарға арналған топқа бөлу: саяхатшы аңдар</span><span data-l="ru">Деление на группы для старших классов: звери-путешественники</span></p><div class="tags"><span class="tag"><span data-l="kk">Топтық жұмыс</span><span data-l="ru">Групповая работа</span></span><span class="tag"><span data-l="kk">7–11 сынып</span><span data-l="ru">7–11 классы</span></span></div>
  <div class="ft"><span class="price">1 000 ₸</span>
@@ -181,7 +187,7 @@ document.addEventListener('click',function(e){var b=e.target.closest('.lang butt
 </article></div>
  <h2 style="margin-top:40px"><span data-l="kk">Сынып сағаттары</span><span data-l="ru">Классные часы</span></h2>
  <p class="sub"><span data-l="kk">Сынып жетекшілерге арналған дайын бағдарламалар.</span><span data-l="ru">Готовые программы для классных руководителей.</span></p>
- <div class="grid"><article class="card">
+ <div class="grid"><article class="card" data-g="adal-azamat">
  <a class="sh" href="games/adal-azamat.html"><img src="img/adal-azamat-2.webp" alt="" loading="lazy"><img class="ic" src="img/adal-azamat-icon.webp" alt=""></a>
  <div class="bd"><h3><a href="games/adal-azamat.html"><span data-l="kk">Адал азамат</span><span data-l="ru">Адал азамат</span></a></h3><p><span data-l="kk">Сынып сағаттарының бағдарламасы: 5–8 сынып, II тоқсан, тақтаға дайын сабақтар</span><span data-l="ru">Программа классных часов: 5–8 классы, II четверть, готовые занятия для доски</span></p><div class="tags"><span class="tag"><span data-l="kk">Сынып жетекшіге</span><span data-l="ru">Классному руководителю</span></span><span class="tag"><span data-l="kk">5–8 сынып</span><span data-l="ru">5–8 классы</span></span></div>
  <div class="ft"><span class="price">1 000 ₸</span>

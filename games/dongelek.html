@@ -102,6 +102,12 @@ ul.pts li::before{content:"";position:absolute;left:0;top:.2em;width:20px;height
 .back{display:inline-block;margin-top:18px;font-weight:700;color:var(--soft)}
 @media (max-width:860px){.hero,.gp{grid-template-columns:1fr}.hero .pic img+img{display:none}.steps,.prices{grid-template-columns:1fr}nav .hm{display:none}.cta .row{margin-left:0}}
 </style>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-R2QV8DSRJN"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag('js',new Date());gtag('config','G-R2QV8DSRJN');
+document.addEventListener('click',function(e){var a=e.target.closest('a');if(!a)return;var h=a.getAttribute('href')||'',g=(a.closest('[data-g]')||document.body).getAttribute('data-g')||'';
+if(h.indexOf('wa.me')>=0)gtag('event','whatsapp_click',{game:g,place:a.className||'link',page:location.pathname});
+else{var m=h.match(/demo\/([^/]+)\//);if(m)gtag('event','demo_open',{game:m[1],page:location.pathname})}});</script>
+
 <script>
 (function(){var k='site-lang',l;try{l=localStorage.getItem(k)}catch(e){}
 if(l!=='kk'&&l!=='ru')l=(navigator.language||'').slice(0,2)==='ru'?'ru':'kk';document.documentElement.lang=l;
@@ -115,7 +121,7 @@ document.addEventListener('click',function(e){var b=e.target.closest('.lang butt
  <div class="lang"><button data-v="kk">ҚАЗ</button><button data-v="ru">РУС</button></div></nav>
 </div></header>
 
-<main><div class="wrap gp">
+<main data-g="dongelek"><div class="wrap gp">
  <div class="gal"><img src="../img/dongelek-1.webp" alt="" loading="eager"><img src="../img/dongelek-2.webp" alt="" loading="lazy"></div>
  <div>
   <div class="gh"><img src="../img/dongelek-icon.webp" alt=""><h1><span data-l="kk">Айналдыр!</span><span data-l="ru">Крути!</span></h1></div>
