@@ -83,7 +83,7 @@ h2{font-size:clamp(24px,3vw,34px);font-weight:900;margin-bottom:6px;letter-spaci
 .step b{display:flex;align-items:center;gap:10px;font-size:19px;margin-bottom:6px}
 .step b::before{counter-increment:s;content:counter(s);width:34px;height:34px;border-radius:50%;background:var(--or);color:#fff;display:grid;place-items:center;font-size:17px;flex:none}
 .step p{color:var(--soft)}
-.prices{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.prices{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:18px}
 .pc{background:var(--card);border:2px solid var(--line);border-radius:20px;padding:24px;display:flex;flex-direction:column;gap:8px}
 .pc.hot{border-color:var(--teal);box-shadow:0 0 0 4px #cfeeea}
 .pc .v{font-size:32px;font-weight:900}
